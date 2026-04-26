@@ -1,27 +1,50 @@
 # 📄 AI PDF Chatbot (RAG)
 
-This project is a Retrieval-Augmented Generation (RAG) based AI chatbot that allows users to upload a PDF and ask questions about it.
+An AI-powered PDF chatbot built using **Retrieval-Augmented Generation (RAG)** that allows users to upload documents and ask context-aware questions with accurate, source-grounded answers.
+
+---
 
 ## 🚀 Features
 
-- Upload PDF and chat with it
-- Semantic chunking for better retrieval
-- Vector search using FAISS
-- Hallucination control using similarity filtering
-- Document summarization
-- Chat history (ChatGPT-like UI)
-- Caching for fast performance
+- 📤 Upload and process PDF documents  
+- 💬 Ask questions and get precise answers  
+- 🧠 Semantic chunking for better context understanding  
+- 🔍 Vector similarity search using FAISS  
+- ❌ Hallucination control (answers only from document)  
+- 📄 Document summarization  
+- ⚡ Fast performance with caching  
+- 💬 Chat history (ChatGPT-like UI)  
+- 📚 Source chunk display for transparency  
+
+---
 
 ## 🧠 Tech Stack
 
-- Python
-- Streamlit
-- LangChain
-- OpenAI
-- FAISS
+- Python  
+- Streamlit  
+- LangChain  
+- OpenAI API  
+- FAISS (Vector Database)  
 
-## ▶️ How to Run
+---
+
+## 🏗️ Architecture
+
+1. PDF uploaded by user  
+2. Text is extracted and split into chunks  
+3. Chunks are converted into embeddings  
+4. Stored in FAISS vector database  
+5. User query → similarity search  
+6. Relevant chunks passed to LLM  
+7. LLM generates context-aware answer  
+
+---
+
+## ▶️ How to Run Locally
 
 ```bash
+git clone https://github.com/your-username/rag-pdf-chatbot.git
+cd rag-pdf-chatbot
+
 pip install -r requirements.txt
 python -m streamlit run app.py
