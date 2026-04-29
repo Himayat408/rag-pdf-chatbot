@@ -4,6 +4,19 @@ An AI-powered PDF chatbot built using **Retrieval-Augmented Generation (RAG)** t
 
 ---
 
+## 📸 Demo Screenshots
+
+### 📄 Upload & Processing
+![Upload](screenshots/upload2.png)
+
+### 💬 Chat Interface
+![Chat](screenshots/chat.png)
+
+### 📄 Document Summary
+![Summary](screenshots/summary.png)
+
+---
+
 ## 🚀 Features
 
 - 📤 Upload and process PDF documents  
